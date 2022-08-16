@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <title>Home</title>  
+{% endblock %}
+
+{% block content %}
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"> O QUE HÁ DE MELHOR NO UNIVERSO</h2>
+    <section>
+
+        <div class="topics row mt-5 text-start align-items-center">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/black-hole.jpeg '%}" alt="Buraco negro">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Buracos Negros</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum sapiente esse nemo dicta rerum, deleniti temporibus id nam quisquam dignissimos qui pariatur reiciendis quo enim eos et! Assumenda, mollitia?
+                </p>
+            </div>       
+            
+        </div>
+
+        <div class="topics row mt-5 text-end align-items-center flex-row-reverse">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/Galaxys.jpeg '%}" alt="Buraco negro">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Galáxias</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum sapiente esse nemo dicta rerum, deleniti temporibus id nam quisquam dignissimos qui pariatur reiciendis quo enim eos et! Assumenda, mollitia?
+                </p>
+            </div>       
+            
+        </div>
+
+        <div class="topics row mt-5 text-start align-items-center">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/Carina.jpg '%}" alt="Buraco negro">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Nebulosas</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum sapiente esse nemo dicta rerum, deleniti temporibus id nam quisquam dignissimos qui pariatur reiciendis quo enim eos et! Assumenda, mollitia?
+                </p>
+            </div>       
+            
+        </div>
+
+        <div class="topics row mt-5 text-end align-items-center flex-row-reverse">
+            <div class="col-lg-6 ms-auto">
+                <img height="250px" width="400" src="{% static 'img/sun.jpeg '%}" alt="Buraco negro">
+            </div>
+            <div class="col-lg-6 me-auto mt-2">
+                <h3>Estrelas</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum sapiente esse nemo dicta rerum, deleniti temporibus id nam quisquam dignissimos qui pariatur reiciendis quo enim eos et! Assumenda, mollitia?
+                </p>
+            </div>       
+            
+        </div>
+    </section>
+{% endblock %}
