@@ -65,9 +65,9 @@
 
     <nav class="navHeader navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a style="color: white;" class="navbar-brand navA" href="#">Home </a>
-        <a style="color: white;" class="navbar-brand" href="#">Sobre</a>
-        <a style="color: white;" class="navbar-brand" href="#">Contatos</a>
+        <a style="color: white;" class="navbar-brand navA" href="{% url 'home' %}">Home </a>
+        <a style="color: white;" class="navbar-brand" href="{% url 'sobre' %}">Sobre</a>
+        <a style="color: white;" class="navbar-brand" href="{% url 'contato' %}">Contatos</a>
         
         <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

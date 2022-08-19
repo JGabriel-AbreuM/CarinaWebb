@@ -18,3 +18,10 @@ class HomeView(TemplateView):
             } 
             
         return context
+
+
+class SobreView(TemplateView):
+    template_name:str = "sobre.html"
+
+class ContatoView(TemplateView):
+    template_name: str = "contato.html"
