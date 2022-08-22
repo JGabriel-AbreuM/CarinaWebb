@@ -68,6 +68,10 @@
         <a style="color: white;" class="navbar-brand navA" href="{% url 'home' %}">Home </a>
         <a style="color: white;" class="navbar-brand" href="{% url 'sobre' %}">Sobre</a>
         <a style="color: white;" class="navbar-brand" href="{% url 'contato' %}">Contatos</a>
+
+        {% if user.is_authenticated %}
+          <a style="color: white;" class="navbar-brand" href="{% url 'galeria' %}">Galeria</a>
+        {% endif%}
         
         <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

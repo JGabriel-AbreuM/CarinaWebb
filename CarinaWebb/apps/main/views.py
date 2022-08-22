@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 import requests
 import json
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class HomeView(TemplateView):
     template_name: str = "home.html"
@@ -19,9 +20,12 @@ class HomeView(TemplateView):
             
         return context
 
-
 class SobreView(TemplateView):
     template_name:str = "sobre.html"
 
 class ContatoView(TemplateView):
     template_name: str = "contato.html"
+
+class GaleriaView(LoginRequiredMixin, TemplateView):
+    login_url = "../accounts/login/"
+    template_name: str = "galeria.html"
