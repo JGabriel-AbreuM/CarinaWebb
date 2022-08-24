@@ -18,11 +18,14 @@
     -moz-box-shadow: -1px -1px 41px 0px rgba(0,0,0,0.75);
 }
 
-#nebulosas, #galaxias, #estrelas {
-    opacity: 0%;
-}
-
 .imagem-do-dia {
     display: flex;
     justify-content: center;
 }
+
+/* .videos {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
