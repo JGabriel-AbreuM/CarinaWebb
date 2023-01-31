@@ -101,11 +101,13 @@
           {% endif %}
         </div>
       </div>
-
     </header>
-    <div class="logo">
-      <img width=275 height=225 src="{% static 'img/logo_CarinaSpace3.png'%}" alt="">
-    </div>
+    
+    {% block logo %}
+      <div class="logo">
+        <img width=275 height=225 src="{% static 'img/logo_CarinaSpace3.png'%}" alt="">
+      </div>
+    {% endblock %}
 
     <main class="content">
       {% block content %}

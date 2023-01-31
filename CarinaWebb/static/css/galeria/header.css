@@ -7,8 +7,8 @@ header {
     padding: 0 40px;
 }
 
-.logo {
-    background-image: url(../img/logo.png);
+.logo-galerie {
+    background-image: url(../img/logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
